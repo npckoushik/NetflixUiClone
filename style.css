@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+body {
+    background-color: black;
+}
+.main {
+    background-image: url(assets/images/mainBG.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+.main .box {
+    background-color: black;
+    opacity: 0.60;
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 77%;
+    margin: auto;
+    height: 100px;
+    /* padding-top: 20px; */
+}
+.nav img {
+    width: 145px;
+    height: 40px;
+    color: rgb(229, 9, 20);
+    position: relative;
+    z-index: 10;
+}
+.nav button {
+    position: relative;
+    z-index: 10;
+}
+.btn-red {
+    color: white;
+    font-weight: 600;
+    border: none;
+    background-color: rgb(229, 9, 20);
+    padding: 9px 6px;
+    border-radius: 5px;
+}
+.top-right-buttons-container {
+    display: flex;
+}
+.lang {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid grey;
+    border-radius: 5px;
+    width: 126px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    /* position: relative; */
+}
+.signin {
+    width: 75px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.hero {
+    color :white;
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: "Martel Sans", sans-serif;
+    /* padding: 30px; */
+    /* gap: 23px; */
+}
+.hero> :nth-child(1) {
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+.forEmail {
+    display: flex;
+}
+.emailInput {
+    font-size: 16px;
+    font-weight: 400px;
+    width: 360px;
+    height: 56px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 20px;
+    margin-right: 10px;
+}
+.getStarted {
+    height: 56px;
+    width: 210px;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.seperation-line {
+    background-color: hsl(0, 0%, 15%);
+    height: 7px;
+}
+.section {
+    display: flex;
+    /* min-width: 50vw; */
+    max-width: 70vw;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+    padding: 100px 200px;
+    /* flex-wrap: wrap; */
+}
+@media screen and (max-width: 1300px){
+    .section {
+        flex-wrap: wrap;
+    }
+}
+.sectionImg {
+    margin-top: 10px;
+    position: relative;
+    top: 0;
+}
+.sectionImg img {
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+.sectionImg video{
+    position: absolute;
+    top: 47px;
+    right: 29px;
+    width: 24vw;
+}
+.sectionHeadings {
+    font-size: 48px;
+    font-weight: 900;
+}
+.sectionParagraphs {
+    font-size: 24px;
+    font-weight: 400;
+}
+#myLinkedInVideo {
+    width: 500px;
+    border: 5px solid rgba(255, 255, 255, 0.4);
+    /* border: 5px solid  rgb(0, 72, 255); */
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 20px;
+}
+.third a{
+    text-decoration: none;
+    color: white;
+}
+.bluetext {
+    color: rgb(0, 89, 255);
+}
+.faq {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 200px 50px 200px;
+}
+#faqHeading {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.faqBox {
+    display: flex;
+    background-color: hsl(0, 0%, 20%);
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    justify-content: space-between;
+    cursor: pointer;
+    max-width: 80vw;
+    transition: all 0.5s ease;
+}
+.faqBox:hover {
+    background-color: hsl(0, 0%, 30%);
+}
+.emailInput2 {
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+.readyText {
+    padding: 15px;
+}
+footer {
+    color: grey;
+    align-items: center;
+}
+@media screen and (max-width: 1300px){
+    .footer-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.mail-to-container {
+    padding: 5% 10% 0 10%;
+}
+.mail-to-container a {
+    /* text-decoration: none; */
+    color: grey;
+}
+.footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0 10% 5% 10%;
+    color: grey;
+}
+.footer-item {
+    display: flex;
+    flex-direction: column;
+}
+.footer-item a {
+    margin: 3% 0;
+    color: grey;
+    /* text-decoration: none; */
+}
+.name {
+    color: white;
+    padding: 50px 10%;
+    align-items: center;
+    text-align: center;
+}
+.name a{
+    color: rgb(229, 9, 20);
+    text-decoration: none;
+}
